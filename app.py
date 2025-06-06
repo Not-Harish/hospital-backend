@@ -6,7 +6,7 @@ import mysql.connector.pooling
 
 load_dotenv()
 
-app = Flask(__name__, static_folder="react-frontend/build", static_url_path="")CORS(app, supports_credentials=True)
+app = Flask(__name__, static_folder="react-frontend/build", static_url_path="")
 CORS(app, supports_credentials=True)
 db_config = {
     "host": os.getenv("DB_HOST"),
